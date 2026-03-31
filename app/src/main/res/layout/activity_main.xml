@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#F0F4F7"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/terminal"
+            android:layout_weight="1"
+            android:layout_marginTop="2.5dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingStart="14dp"
+            android:text="Presicion API"
+            android:layout_weight="200"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gear"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIORNMENT: PRODUCTION"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="27dp"
+        android:textColor="#0061A6"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Console"
+        android:textStyle="bold"
+        android:layout_marginStart="27dp"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Enter your prompt"
+        android:layout_marginStart="28dp"
+        android:textColor="#9E9E9E"
+        android:layout_marginTop="35dp"/>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="0dp">
+
+        <EditText
+            android:id="@+id/tiPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:hint="Hey AI !!\nWhat's going on ?"
+            android:gravity="top|start"
+            android:textSize="16sp"
+            android:textColorHint="#D1D5DB"
+            android:textColor="#1F2937"
+            android:background="@android:color/transparent"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#005A9B"
+        android:layout_marginHorizontal="18dp"
+        android:id="@+id/btn"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lightning"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Response using AI"
+            android:textSize="18dp"
+            android:paddingStart="12dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"
+           />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="#F0F4F7"
+        app:cardCornerRadius="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESPONSE BODY"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingStart="40dp"
+            android:textSize="15dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="16dp"
+            android:backgroundTint="#D9E4EC">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Getting Your Response Ready"
+                android:inputType="textMultiLine"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:id="@+id/tvResponse"/>
+
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
