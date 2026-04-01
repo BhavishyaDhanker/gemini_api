@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:background="#F0F4F7"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +28,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:textColor="#000000"
             android:paddingStart="14dp"
             android:text="Presicion API"
             android:layout_weight="200"/>
@@ -54,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Console"
+        android:textColor="#000000"
         android:textStyle="bold"
         android:layout_marginStart="27dp"
         android:textSize="35dp"/>
@@ -149,6 +152,7 @@
             android:layout_height="wrap_content"
             android:text="RESPONSE BODY"
             android:textStyle="bold"
+            android:textColor="#000000"
             android:layout_marginTop="20dp"
             android:paddingStart="40dp"
             android:textSize="15dp" />
@@ -166,6 +170,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:textColor="#000000"
                 android:text="Getting Your Response Ready"
                 android:inputType="textMultiLine"
                 android:layout_margin="10dp"

@@ -33,7 +33,7 @@ class geminiRepository {
 
             println("Error generating content: ${e.message}")
             // second case return statement
-             val text = "Sorry, I couldn't reach the server. Error: ${e.localizedMessage}"
+             val text = "Sorry, I couldn't reach the server. Error: ${e.message}"
 
              return text
         }
